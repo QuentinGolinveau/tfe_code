@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.5.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#EBEFF2;}
-</style>
-<g>
-	<path class="st0" d="M36,0H4C1.8,0,0,1.8,0,4v32c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V4C40,1.8,38.2,0,36,0z M22.6,30.1
-		c0,1.1-0.9,1.9-1.9,1.9h-1.3c-1.1,0-1.9-0.9-1.9-1.9V17.2c0-1.1,0.9-1.9,1.9-1.9h1.3c1.1,0,1.9,0.9,1.9,1.9V30.1z M20,13.2
-		c-1.4,0-2.6-1.2-2.6-2.6S18.6,8,20,8s2.6,1.2,2.6,2.6S21.4,13.2,20,13.2z"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 40 40" viewBox="0 0 40 40"><path d="M36 0H4C1.8 0 0 1.8 0 4v32c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zM22.6 30.1c0 1.1-.9 1.9-1.9 1.9h-1.3c-1.1 0-1.9-.9-1.9-1.9V17.2c0-1.1.9-1.9 1.9-1.9h1.3c1.1 0 1.9.9 1.9 1.9v12.9zM20 13.2c-1.4 0-2.6-1.2-2.6-2.6S18.6 8 20 8s2.6 1.2 2.6 2.6-1.2 2.6-2.6 2.6z" style="fill:#ebeff2"/></svg>
