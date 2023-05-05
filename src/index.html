@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="https://use.typekit.net/muo1kii.css">
 
   <script src="scripts/app.js" defer></script>
 </head>
@@ -19,20 +20,62 @@
   <main>
     <section class="start">
       <img class="logo" src="assets/images/logo_test.svg" alt="Logo de l'application, ACE Tennis Radar" srcset="">
-      <div>
-        <a href="">Connexion</a>
-        <hr>
-        <a href="">Inscription</a>
+      <div class="start__el">
+        <a class="start__el--btn start__el--connexion" href="#">Connexion</a>
+        <hr class="separateur">
+        <a class="start__el--btn start__el--inscription" href="#">Inscription</a>
       </div>
-      <div>
-
+      <form action="" class="form form--inscription hidden" name="form">
+        <div class="form__el">
+            <label for="mail">E-mail</label>
+            <input class="form__el--mail" type="email" id="mailinscript" name="user_mail" requierd>
+        </div>
+        <div class="form__el">
+          <label for="mail">Mot de passe</label>
+          <input class="form__el--mdp" type="password" id="mdpinscript" name="user_mdp" requierd minlength="6">
+        </div>
+        <div>
+          <button class="form__el--btn inactive" type="submit">Inscription</button>
       </div>
-      <div>
-        
+      </form>
+      <form action="" class="form form--connexion hidden">
+        <div class="form__el">
+            <label for="mail">E-mail</label>
+            <input type="email" id="mailconnex" name="user_mail" requierd>
+        </div>
+        <div class="form__el">
+          <label for="mail">Mot de passe</label>
+          <input type="password" id="mdpconnex" name="user_mdp" requierd>
+        </div>
+        <div class="form__el">
+          <button class="form__el--btn" type="submit">Connexion</button>
       </div>
+      </form>
     </section>
-    <section>
-
+    <section class="perso hidden">
+      <p class="perso__el perso__el--texte">Avant de continuer, complètes tes informations personnelles pour une meilleure&nbsp;expérience.</p>
+      <form action="" class="form form--perso">
+        <div class="form__el">
+            <label for="name">Nom</label>
+            <input class="form__el--name" type="text" id="name" name="user_name">
+        </div>
+        <div class="form__el">
+          <label for="firstname">Prénom</label>
+          <input class="form__el--firstname" type="text" id="firstname" name="user_firstname">
+        </div>
+        <div class="form__el">
+          <button class="form__el--btn inactive" type="button">Continuer</button>
+          <hr class="separateur">
+          <a class="form__el--skip" href="#">Passer</a>
+      </div>
+      </form>
+    </section>
+    <section class="home hidden">
+      <nav class="home__el home__el--nav">
+        <button>Home</button>
+        <p>ACE</p>
+        <button>Profil</button>
+      </nav>
     </section>
   </main>
 
