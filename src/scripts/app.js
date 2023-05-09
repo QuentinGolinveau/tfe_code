@@ -1,4 +1,5 @@
 "use-scrict";
+import { gsap } from "gsap";
 
 //INSCRIPTION/CONNEXION **********************************
 
@@ -11,13 +12,13 @@ let connexionSection = document.querySelector('.form--connexion');
 let startElement = document.querySelector('.start__el');
 
 inscriptionBtn.addEventListener("click", (e) => {
-    inscriptionSection.classList.remove('hidden');
-    startElement.classList.add("hidden");
+    inscriptionSection.classList.remove('off');
+    startElement.classList.add("off");
 });
 
 connexionBtn.addEventListener("click", (e) => {
-    connexionSection.classList.remove('hidden');
-    startElement.classList.add("hidden");
+    connexionSection.classList.remove('off');
+    startElement.classList.add("off");
 });
 
 let etatMail = 0;
@@ -110,15 +111,45 @@ userFirstnameValue.addEventListener('change', setFirstname);
 let persoSection = document.querySelector('.perso');
 let startSection = document.querySelector('.start');
 let homeSection = document.querySelector('.home');
+let nav = document.querySelector('.nav');
 
 formBtn.addEventListener("click", (e) =>{
-    startSection.classList.add("hidden");
-    persoSection.classList.remove('hidden');
+    startSection.classList.add("off");
+    persoSection.classList.remove('off');
 });
 
 
 NextBtn.addEventListener('click', (e) =>{
-    startSection.classList.add("hidden");
-    persoSection.classList.add('hidden');
-    homeSection.classList.remove('hidden');
+    startSection.classList.add("off");
+    persoSection.classList.add('off');
+    nav.classList.remove('off');
+    homeSection.classList.remove('off');
+});
+
+
+//MENU*********************************************************
+
+let aidBtn = document.getElementById('aid');
+let aidMenu = document.querySelector('.menu__el--sousmenu');
+let sousMenu = document.querySelector('.sousmenu');
+let iconArrow = document.querySelector('.icon--arrow');
+
+let compteurAidBtn = 0;
+console.log(compteurAidBtn);
+iconArrow.addEventListener('click', (e) =>{
+    console.log(compteurAidBtn + "click");
+    if(compteurAidBtn == 0){
+        aidMenu.classList.add('showMenu');
+        sousMenu.classList.add('show');
+        sousMenu.classList.remove('off');
+        iconArrow.classList.add('turn');
+        compteurAidBtn = 1;
+
+    }else if(compteurAidBtn == 1){
+        aidMenu.classList.remove('showMenu');
+        sousMenu.classList.remove('show');
+        sousMenu.classList.add('off');
+        iconArrow.classList.remove('turn');
+        compteurAidBtn = 0;
+    }
 })
