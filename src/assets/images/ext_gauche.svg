@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 61 56" style="enable-background:new 0 0 61 56;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D9D9D9;}
+	.st1{fill:#DDFF00;}
+</style>
+<rect x="11" class="st0" width="2" height="56"/>
+<rect class="st0" width="2" height="56"/>
+<rect x="51" y="9" class="st0" width="2" height="47"/>
+<rect x="11" y="8.9" class="st0" width="49.9" height="2.2"/>
+<g>
+	<polygon class="st1" points="31,25.2 13,14.8 13,15.5 30.7,25.7 	"/>
+	<polygon class="st1" points="31,28.6 13,18.2 13,18.8 30.7,29.1 	"/>
+	<polygon class="st1" points="31,31.9 13,21.5 13,22.1 30.7,32.4 	"/>
+	<polygon class="st1" points="31,35.2 13,24.8 13,25.5 30.7,35.7 	"/>
+	<polygon class="st1" points="31,38.6 13,28.2 13,28.8 30.7,39.1 	"/>
+	<polygon class="st1" points="31,41.9 13,31.6 13,32.1 30.7,42.4 	"/>
+	<polygon class="st1" points="31,45.2 13,34.8 13,35.5 30.7,45.7 	"/>
+	<polygon class="st1" points="31,48.6 13,38.2 13,38.8 30.7,49 	"/>
+	<polygon class="st1" points="31,51.9 13,41.5 13,42.1 30.7,52.4 	"/>
+	<path class="st1" d="M30.7,55.7L13,45.4v-0.6l18,10.4L30.7,55.7z"/>
+	<path class="st1" d="M13,48.8v-0.6L26.5,56h-1.1L13,48.8z"/>
+	<polygon class="st1" points="31,21.9 13,11.5 13,12.2 30.7,22.4 	"/>
+	<path class="st1" d="M31,18.6l-0.3,0.5l-13.8-8H18L31,18.6z"/>
+	<path class="st1" d="M31,15.3l-0.3,0.4l-8-4.6h1.1L31,15.3z"/>
+	<path class="st1" d="M13,52.1v-0.6l7.7,4.5h-1.1L13,52.1z"/>
+</g>
+</svg>
