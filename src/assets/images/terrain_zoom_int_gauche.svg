@@ -1,0 +1,12 @@
+<svg version="1.1" id="gauche_int" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 375 900" style="enable-background:new 0 0 375 900;" xml:space="preserve">
+<polygon style="fill:#DDFF00;fill-opacity:0.75;" points="300.7,601.8 309.3,601.8 271.1,271 262.5,271 "/>
+<g>
+	<polygon style="fill:#EBEFF2;fill-opacity:0.75;" points="79.3,863.4 70.7,863.4 70.7,888.9 0,888.9 0,897.5 375,897.5 375,888.9 79.3,888.9 	"/>
+	<polygon style="fill:#EBEFF2;fill-opacity:0.75;" points="0,27.6 0,36.2 70.7,36.2 71,234.4 79.5,234.4 79.3,36.2 375,36.2 375,27.6 	"/>
+	<polygon style="fill:#EBEFF2;fill-opacity:0.75;" points="79.6,271 71,271 71.4,601.8 0,601.8 0,610.4 375,610.4 375,601.8 80,601.8 	"/>
+</g>
+<g>
+	<polygon style="opacity:0.75;fill:#002333;fill-opacity:0.75;enable-background:new;" points="79.5,242 71,242 0,242 0,271 71,271 79.6,271 262.5,271 271.1,271 375,271 375,242 	"/>
+	<polygon style="fill:#EBEFF2;fill-opacity:0.75;" points="79.5,234.4 71,234.4 0,234.4 0,242 71,242 79.5,242 375,242 375,234.4 	"/>
+</g>
+</svg>
