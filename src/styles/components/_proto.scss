@@ -14,10 +14,15 @@ body{
     margin: 0;
     font-family: embarcadero-mvb-pro-condense, sans-serif;
     line-height: 1.4;
-    overflow: hidden;
-}.portrait{
+}
+section{
+    display: none;
+}
+.portrait{
     @media (max-width: 480px){
-        
+        section{
+            display: block;
+        }
         .nav{
             display: flex;
             justify-content: space-between;
@@ -32,7 +37,7 @@ body{
             border-radius: 0px 0px 15px 15px;
             position: fixed;
             top: 0;
-            z-index: 10;
+            z-index: 100;
             &__el{
                 &--btn{
                     position: relative;
@@ -158,9 +163,11 @@ body{
         .menu{
             position: absolute;
             width: 100vw;
+            height: 100vh;
             display: none;
             background-color: $c-bg;
-            z-index: 9;
+            z-index: 99;
+            overflow: hidden;
             .title{
                 &--trois{
                     font-size: 24px;
@@ -255,7 +262,7 @@ body{
                 filter: drop-shadow(0px 2px 4px #05010540);
                 &--libre{
                     justify-content: flex-start;
-                    background-image: url(/assets/images/exo_libre.svg);
+                    background-image: url(../assets/images/exo_libre.svg);
                     background-position: right top;
                     .texte{
                         text-align: left;
@@ -264,7 +271,7 @@ body{
                 }
                 &--prog{
                     justify-content: flex-end;
-                    background-image: url(/assets/images/exo_prog.svg);
+                    background-image: url(../assets/images/exo_prog.svg);
                     .texte{
                         text-align: right;
                         margin: 12px 20px 0 0;
@@ -392,7 +399,7 @@ body{
                            appearance: none;
                            margin-top: -8px;
                            border-radius: 25px;
-                           background-image: url(/assets/images/balle.svg);
+                           background-image: url(../assets/images/balle.svg);
                            background-size: cover;
                            height: 2rem;
                            width: 2rem;
@@ -406,7 +413,7 @@ body{
                         input[type="range"]::-moz-range-thumb {
                            border: none;
                            border-radius: 25px;
-                           background-image: url(/assets/images/balle.svg);
+                           background-image: url(../assets/images/balle.svg);
                            height: 2rem;
                            width: 2rem;
                         }
@@ -421,12 +428,218 @@ body{
                 }
             }
         }
-        
+        .historique{
+            top: 120px;
+            position: relative;
+            height: 100%;
+            &__el, .sessionliste__el{
+                width: 100vw;
+                height: 56px;
+                grid-column: 1/-1;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(4, 1fr);
+                justify-items: center;
+                align-items: center;
+                &:nth-child(2n+1){
+                    background-color: $c-darkblue;
+                }
+                svg{
+                    height: 30px;
+                }
+                &--icon{
+                    font-size: 18px;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &--border{
+                    border: 1px solid $c-text;
+                    border-bottom: none;
+                    border-top: none;
+                    &:first-child{
+                        border-left: none;
+                    }
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+                &--icon{
+                    background-color: transparent;
+                    padding: 0;
+                }
+                &--arrow{
+                    height: 12px!important;
+                    margin-left: 8px;
+                }
+                &--filtre{
+                    background-color: $c-bg!important;
+                }
+            }
+            .sessionliste{
+                &__el{
+                    &--texte,&--icon{
+                        font-size: 18px;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &--border{
+                        border: 1px solid $c-text;
+                        border-bottom: none;
+                        border-top: none;
+                        &:first-child{
+                            border-left: none;
+                        }
+                        &:last-child{
+                            border-right: none;
+                        }
+                        &:nth-child(3){
+                            border-right: 2px solid $c-text;
+                        }
+                    }
+                    &--session{
+                        display: grid;
+                        justify-content: center;
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-rows: repeat(5, 1fr);
+                    }
+                    &--image{
+                        height: 56px;
+                    }
+                }
+            }
+            
+        }
+        .statistique{
+
+            &__el{
+                &:first-child{
+                    height: 100vh;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                }
+                &:nth-child(2){
+                    background-color: $c-darkblue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &--impact{
+                    position: absolute;
+                }
+                .impact{
+                    &--eg{
+                        right: 14vw;
+                        top: 55vh;
+                    }
+                    &--ed{
+                        left: 13vw;
+                        top: 55vh;
+                    }
+                }
+                &--terrain{
+                    width: 100%;
+                }
+                &--legende{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    background-color: $c-darkblue;
+                    height: 36px;
+                    width: 80vw;
+                    margin: auto;
+                    position: absolute;
+                    bottom: 16px;
+                    left: 50%;
+                    transform: translateX(-50%)
+                }
+                &--titre{
+                    font-weight: 500;
+                    font-size: 21px;
+                    margin: 48px auto 0;
+                }
+                &--date{
+                    margin-bottom: 40px;
+                }
+                &--chiffre{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 75vw;
+                    margin: auto;
+                    justify-content: center;
+                }
+                &--supprbtn{
+                    width: 280px;
+                    height: 48px;
+                    font-family: embarcadero-mvb-pro-condense, sans-serif;
+                    font-style: italic;
+                    font-weight: 800;
+                    font-size: 18px;
+                    background: #EBEFF2;
+                    border: 2px solid #E41313;
+                    border-radius: 10px;
+                    margin: 96px 0 48px;
+                }
+            }
+            .legende{
+                &__el{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    &--balle{
+                        width: 10px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .chiffre{
+                &__el{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 12px;
+                    &--texte{
+                        font-size: 37px;
+                        line-height: 1;
+                    }
+                    &--icon{
+                        height: 48px;
+                        margin-bottom: 12px;
+                    }
+                    &--chrono,&--pourcent{
+                        margin-right: 26px;
+                    }
+                    &--service{
+                        margin: 0 26px;
+                    }
+                    &--vmoy, &--vmax{
+                        margin-left: 26px;
+                    }
+                    &--pourcent, &--vmax{
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
     }
 }
 .landscape{
     @media (orientation: landscape){
-        .nav, .start,.perso, .menu,.home,.choix{
+        section{
+            display: block;
+        }
+        .nav, .start,.perso, .menu,.home,.choix,.historique, .statistique{
             display: none;
         }
         body{
@@ -465,11 +678,61 @@ body{
                 &--time, &--services{
                     font-size: 24px;
                 }
+                &--time{
+                    min-width: 60px;
+                    text-align: center;
+                }
+                &--pause, &--stop{
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 100;
+                    background-color: $c-darkblue;
+                }
+                &--play{
+                    border: none;
+                    background-color: transparent;
+                    svg{
+                        width: 180px;
+                    }
+                }
+                &--stop{
+                    flex-direction: column;
+                    .stop{
+                        &__el{
+                            display: flex;
+                            justify-content: center;
+                            width: 100vw;
+                            &--texte{
+                                font-style: italic;
+                                font-weight: 800;
+                                font-size: 24px;
+                            }
+                            &--btn{
+                                border: none;
+                                width: 240px;
+                                height: 48px;
+                                border-radius: 4px;
+                                font-family: embarcadero-mvb-pro-condense, sans-serif;
+                                font-style: italic;
+                                font-weight: 800;
+                                font-size: 18px;
+                                margin: 0 28px;
+                            }
+                            &--oui{
+                                color: $c-black;
+                                background-color: $c-contrast;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
-
 .landscape, .portrait{
     .rotation{
         background-color: $c-darkblue;
@@ -518,6 +781,7 @@ body{
 
 .inactive{
     opacity: 0.5!important;
+    pointer-events: none;
 }
 
 .visible{
