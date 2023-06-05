@@ -7,7 +7,34 @@
 
   <meta name="description" content="">
   <!-- Meta Partage -->
+  <!-- Primary Meta Tags -->
+  <title>ACE Tennis Radar | TFE - HEAJ - DWT</title>
+  <meta name="title" content="ACE Tennis Radar | TFE - HEAJ - DWT">
+  <meta name="description" content="L’application Ace: Tennis Radar te permet de t’entraîner seul dans la pratique du tennis et particulièrement au niveau du service. Profites d’un suivi de toutes tes sessions d’entraînement et des exercices enregistrés directement dans l’app.   ">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://quentingolinveau.be/projets/tfe/">
+  <meta property="og:title" content="ACE Tennis Radar | TFE - HEAJ - DWT">
+  <meta property="og:description" content="L’application Ace: Tennis Radar te permet de t’entraîner seul dans la pratique du tennis et particulièrement au niveau du service. Profites d’un suivi de toutes tes sessions d’entraînement et des exercices enregistrés directement dans l’app.   ">
+  <meta property="og:image" content="http://quentingolinveau.be/projets/tfe/assets/images/meta.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://quentingolinveau.be/projets/tfe/">
+  <meta property="twitter:title" content="ACE Tennis Radar | TFE - HEAJ - DWT">
+  <meta property="twitter:description" content="L’application Ace: Tennis Radar te permet de t’entraîner seul dans la pratique du tennis et particulièrement au niveau du service. Profites d’un suivi de toutes tes sessions d’entraînement et des exercices enregistrés directement dans l’app.   ">
+  <meta property="twitter:image" content="http://quentingolinveau.be/projets/tfe/assets/images/meta.png">
   <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#003352">
+  <meta name="apple-mobile-web-app-title" content="Ace: Tennis Radar">
+  <meta name="application-name" content="Ace: Tennis Radar">
+  <meta name="msapplication-TileColor" content="#003352">
+  <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
@@ -22,8 +49,11 @@
     <button class="nav__el nav__el--btn" id="profilbtn"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 40 40" viewBox="0 0 40 40"><path d="M36 0H4C1.8 0 0 1.8 0 4v32c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zM20 8c2.7 0 4.8 2.2 4.8 4.8 0 2.7-2.2 4.9-4.8 4.9s-4.8-2.2-4.8-4.9c0-2.6 2.1-4.8 4.8-4.8zm9.7 19.8c0 2.3-1.9 4.2-4.2 4.2h-11c-2.3 0-4.2-1.9-4.2-4.2v-2.2c0-3.1 2.6-5.7 5.7-5.7h8c3.1 0 5.7 2.6 5.7 5.7v2.2z" style="fill:#ebeff2"/></svg><span>Profil</span></button>
   </nav>
   <main>
-    <section class="start">
+    <section class="section section--start start">
       <img class="logo" src="assets/images/logo_test.svg" alt="Logo de l'application, ACE Tennis Radar">
+      <div class="start__el">
+        <p>T’améliorer avec une application à ton service</p>
+      </div>
       <div class="start__el">
         <button class="start__el--btn start__el--connexion">Connexion</button>
         <hr class="separateur">
@@ -74,7 +104,7 @@
       </div>
       </form>
     </section>
-    <section class="menu">
+    <section class="menu off">
       <div class="menu__el--profil">
         <img src="assets/images/profil.svg" alt="Avatar profil">
         <h3 class="title--trois" id="nom_perso"></h3>
@@ -227,7 +257,7 @@
         <button class="choix__el--btn inactive">Commencer</button>
       </div>
     </section>
-    <section class="session">
+    <section class="session off">
       <div class="session__el--para">
         <div class="session__el--time"></div>
         <div class="session__el--boutons">

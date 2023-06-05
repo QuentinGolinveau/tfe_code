@@ -7,7 +7,7 @@
     "Vmoy": 147,
     "Pourcentage": 65,
     "Vmax": 166,
-    "Cible": "../assets/images/ext_gauche.svg",
+    "Cible": "assets/images/ext_gauche.svg",
     "Cote": "gauche",
     "Zone": "exterieur",
     "Titre": "Session Extérieur Gauche"
@@ -20,7 +20,7 @@
     "Vmoy": 157,
     "Pourcentage": 73,
     "Vmax": 172,
-    "Cible": "../assets/images/int_droit.svg",
+    "Cible": "assets/images/int_droit.svg",
     "Cote": "droit",
     "Zone": "interieur",
     "Titre": "Session Intérieur Droit"
@@ -33,7 +33,7 @@
     "Vmoy": 151,
     "Pourcentage": 77,
     "Vmax": 162,
-    "Cible": "../assets/images/ext_droit.svg",
+    "Cible": "assets/images/ext_droit.svg",
     "Cote": "droit",
     "Zone": "exterieur",
     "Titre": "Session Extérieur Droit"
@@ -46,7 +46,7 @@
     "Vmoy": 163,
     "Pourcentage": 68,
     "Vmax": 178,
-    "Cible": "../assets/images/int_gauche.svg",
+    "Cible": "assets/images/int_gauche.svg",
     "Cote": "gauche",
     "Zone": "interieur",
     "Titre": "Session Intérieur Gauche"
@@ -59,7 +59,7 @@
     "Vmoy": 155,
     "Pourcentage": 75,
     "Vmax": 175,
-    "Cible": "../assets/images/ext_droit.svg",
+    "Cible": "assets/images/ext_droit.svg",
     "Cote": "droit",
     "Zone": "exterieur",
     "Titre": "Session Extérieur Droit"

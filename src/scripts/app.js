@@ -9,16 +9,20 @@ let inscriptionSection = document.querySelector('.form--inscription');
 let connexionBtn = document.querySelector('.start__el--connexion');
 let connexionSection = document.querySelector('.form--connexion');
 
-let startElement = document.querySelector('.start__el');
+let startElement = document.querySelectorAll('.start__el');
 
 inscriptionBtn.addEventListener("click", (e) => {
     inscriptionSection.classList.remove('off');
-    startElement.classList.add("off");
+    for (let s = 0; s < startElement.length; s++){
+        startElement[s].classList.add("off");
+    }
 });
 
 connexionBtn.addEventListener("click", (e) => {
     connexionSection.classList.remove('off');
-    startElement.classList.add("off");
+    for (let s = 0; s < startElement.length; s++){
+        startElement[s].classList.add("off");
+    }
 });
 
 var etatMail = 0;
@@ -465,7 +469,7 @@ ouiBtn.addEventListener('click', (e)=>{
 
 //JSON**************************************************************************
 
-fetch("../assets/json/data_ace.json")
+fetch("https://quentingolinveau.be/projets/tfe/app/assets/json/data_ace.json")
   .then(function(response) {
     return response.json();
   })
